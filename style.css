@@ -1,0 +1,20 @@
+* {
+    border: 2px solid red;
+}
+/* set up for main body */
+html,body{
+    font-size: 16px;
+}
+
+
+/* navbar */
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
+    justify-content: center;
+   
+}
+.nav-flex-item {
+    margin: 1rem;
+}
