@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Oswald&display=swap:,300,500,600,700,800,900");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css");
+
+/* set up for main body */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+/* reusable components */
+/* fonts */
+.text-barlow {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.text-oswald {
+  font-family: "Oswald", sans-serif;
+}
+
+/* navbar */
+
+/* footer also added here  */
+.social-links,
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+  justify-content: center;
+}
+.nav-flex-item:link,
+.nav-flex-item:visited {
+  margin: 1rem;
+  color: black;
+}
+.nav-flex-item:hover {
+  font-size: 1.43rem;
+  color: green;
+}
+/* main section */
+
+.callout-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("/images/coding_image.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.flex-item-wrapper {
+  margin-top: 7rem;
+  letter-spacing: 0.1rem;
+}
+
+.social-links,
+.callout-section-flex-item {
+  font-size: 2.3rem;
+  color: green;
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+/* key frames animation for callout section text */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* footer */
+/* over riding some of the footer css form above */
+
+.social-icon-footer-icon {
+  margin: 0 0 0 0.5rem;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  background-color: green;
+}
