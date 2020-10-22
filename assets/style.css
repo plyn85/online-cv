@@ -12,6 +12,7 @@ body {
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
+  background-color: #0c0909;
 }
 /* reusable components */
 /* fonts */
@@ -33,9 +34,24 @@ body {
 .text-center {
   text-align: center;
 }
+
+/* tageting all h1 */
+h1 {
+  margin-top: 5rem;
+}
+
 /* navbar */
 
-/* footer also added here  */
+/* creating sticky navbar */
+.nav-container {
+  background-color: #0f0e0efa;
+  padding: 0.5rem 0.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+/* socail links also added here  */
 .social-links,
 .nav-container {
   display: flex;
@@ -46,7 +62,7 @@ body {
 .nav-flex-item:link,
 .nav-flex-item:visited {
   margin: 1rem;
-  color: black;
+  color: #ffffff;
 }
 .nav-flex-item:hover {
   font-size: 1.43rem;
@@ -111,7 +127,7 @@ body {
 }
 
 /* main section projects page */
-#main-projects-section {
+.projects-wrapper {
   justify-content: center;
   display: flex;
   flex-direction: row;
@@ -119,8 +135,11 @@ body {
   padding: 1rem;
 }
 
-#main-projects-section figure {
+.projects-wrapper figure {
   text-align: center;
+}
+figcaption {
+  color: white;
 }
 /* #projects-section-one figure {
   display: flex;
