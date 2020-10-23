@@ -42,15 +42,21 @@ h1 {
 
 /* navbar */
 
-/* creating sticky navbar */
+/* adding footer here as a lot of styles are common to both */
+/* creating sticky navbar and footer*/
+
 .nav-container {
   background-color: #0f0e0efa;
   padding: 0.5rem 0.5rem;
   position: fixed;
-  top: 0;
   width: 100%;
   z-index: 1;
 }
+/* just for nav  */
+.nav-container {
+  top: 0;
+}
+
 /* socail links also added here  */
 .social-links,
 .nav-container {
@@ -126,21 +132,6 @@ h1 {
   background-color: green;
 }
 
-/* main section projects page */
-.projects-wrapper {
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 1rem;
-}
-
-.projects-wrapper figure {
-  text-align: center;
-}
-figcaption {
-  color: white;
-}
 /* #projects-section-one figure {
   display: flex;
   flex-direction: column;
@@ -163,10 +154,6 @@ figcaption {
 #projects-section-four {
   grid-area: projects-section-four;
 } */
-#main-projects-section img {
-  max-width: 100%;
-  min-height: 12rem;
-}
 
 /* timeline css form  https://www.w3schools.com/howto/howto_css_timeline.asp*/
 /* The actual timeline (the vertical ruler) */
@@ -289,4 +276,74 @@ figcaption {
   .right {
     left: 0%;
   }
+}
+/* skills and projects section */
+
+/* for both skills and projects */
+.skills-projects-wrapper {
+  margin-top: 3rem;
+  justify-content: center;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.skills-projects-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+figcaption {
+  color: white;
+  text-align: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+/* just for skills */
+.skills-wrapper figcaption {
+  margin-top: 2.3rem;
+  width: 10rem;
+}
+
+/* over riding margin on djano text for alingment with other text*/
+#django-text {
+  margin-top: 0;
+}
+.skills-wrapper {
+  grid-template-columns: repeat(3, 15rem);
+  grid-template-rows: repeat(3, 16rem);
+}
+/* just for projects */
+.projects-wrapper {
+  grid-template-columns: repeat(2, 30rem);
+  grid-template-rows: repeat(2, 20rem);
+}
+
+.projects-wrapper figcaption {
+  /* margin-top: 0; */
+  margin-bottom: 1rem;
+}
+
+.projects-wrapper figcaption span {
+  padding: 2rem;
+}
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+/* targeting each footer div */
+footer div {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+/* targeting socail links footer */
+.social-link-footer {
+  font-size: 1.5rem;
 }
