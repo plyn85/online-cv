@@ -42,8 +42,7 @@ h1 {
 
 /* navbar */
 
-/* adding footer here as a lot of styles are common to both */
-/* creating sticky navbar and footer*/
+/* creating sticky navbar*/
 
 .nav-container {
   background-color: #0f0e0efa;
@@ -51,9 +50,6 @@ h1 {
   position: fixed;
   width: 100%;
   z-index: 1;
-}
-/* just for nav  */
-.nav-container {
   top: 0;
 }
 
@@ -65,14 +61,21 @@ h1 {
   font-size: 1.4rem;
   justify-content: center;
 }
-.nav-flex-item:link,
-.nav-flex-item:visited {
+
+/*  targeting all links when not visited*/
+a {
   margin: 1rem;
   color: #ffffff;
+  text-decoration: none;
 }
-.nav-flex-item:hover {
-  font-size: 1.43rem;
+/* targeting all links when visited */
+a:visited {
+  color: gray;
+}
+/* tageting all links on hover */
+a:hover {
   color: green;
+  transform: scale(1.1);
 }
 /* main section about page*/
 
@@ -102,7 +105,7 @@ h1 {
   -o-animation: fadeIn ease 10s;
   -ms-animation: fadeIn ease 10s;
 }
-/* key frames animation for callout section text */
+/* key frames animation so callout section text fades in*/
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -131,29 +134,11 @@ h1 {
   border-radius: 1.5rem;
   background-color: green;
 }
-
-/* #projects-section-one figure {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  margin: 0;
-  padding: 0.5em;
-  box-sizing: border-box;
-  text-align: center;
-} */
-
-/* #projects-section-one {
-  grid-area: projects-section-one;
+/* changing socail icons color on hover  */
+.social-icon-footer-icon:hover {
+  color: green;
+  background-color: black;
 }
-#projects-section-two {
-  grid-area: projects-section-two;
-}
-#projects-section-three {
-  grid-area: projects-section-three;
-}
-#projects-section-four {
-  grid-area: projects-section-four;
-} */
 
 /* timeline css form  https://www.w3schools.com/howto/howto_css_timeline.asp*/
 /* The actual timeline (the vertical ruler) */
@@ -301,6 +286,10 @@ figcaption {
   font-weight: 600;
   padding: 0.5rem;
 }
+/* projects and slills images both grow on hover */
+.skills-projects-wrapper img:hover {
+  transform: scale(1.1);
+}
 /* just for skills */
 .skills-wrapper figcaption {
   margin-top: 2.3rem;
@@ -333,7 +322,6 @@ figcaption {
 footer {
   display: flex;
   justify-content: center;
-
   position: relative;
   margin-top: 1.5rem;
 }
@@ -341,7 +329,7 @@ footer {
 /* targeting each footer div */
 footer div {
   padding: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.75rem;
 }
 /* targeting socail links footer */
 .social-link-footer {
