@@ -88,10 +88,11 @@ a:hover {
   align-items: center;
   background: url("/images/laptop.jpg");
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100vh;
   position: relative;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .flex-item-wrapper {
@@ -307,7 +308,7 @@ figcaption {
 }
 .skills-wrapper {
   grid-template-columns: repeat(3, 15rem);
-  grid-template-rows: repeat(3, 16rem);
+  grid-template-rows: repeat(2, 16rem);
 }
 /* just for projects */
 .projects-wrapper {
@@ -316,7 +317,6 @@ figcaption {
 }
 
 .projects-wrapper figcaption {
-  /* margin-top: 0; */
   margin-bottom: 1rem;
 }
 
@@ -325,6 +325,7 @@ figcaption {
 }
 /* footer */
 footer {
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
 }
