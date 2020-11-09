@@ -325,28 +325,22 @@ figcaption {
 
 /* just for skills */
 
-.skills-wrapper figcaption {
-  margin-top: 2.3rem;
-  width: 10rem;
-}
-
-/* over riding margin on djano text for alingment with other text*/
-
-#django-text {
-  margin-top: 0;
-}
-
 .skills-wrapper {
-  grid-template-columns: repeat(3, 15rem);
-  grid-template-rows: repeat(2, 16rem);
-  padding-bottom: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  padding-bottom: 1.5rem;
+  grid-gap: 5rem;
+}
+
+/* detting max height for django image to align with other elements */
+
+.django-img-height {
+  max-height: 14rem;
 }
 
 /* just for projects */
 
 .projects-wrapper {
-  grid-template-columns: repeat(2, 30rem);
-  grid-template-rows: repeat(2, 20rem);
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
 .projects-wrapper figcaption {
